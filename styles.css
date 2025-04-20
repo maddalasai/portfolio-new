@@ -1,145 +1,48 @@
-/* Base Reset */
-* {
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff6ec;
+  color: #333;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
-/* Body and Global Styles */
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #fff3e6; /* soft peach background */
-  color: #333;
-  line-height: 1.6;
-  padding: 20px;
-  animation: fadeIn 1.2s ease;
-}
-
-/* Header Styling */
 header {
+  background-color: #ffe8d6;
   text-align: center;
-  background-color: #ffd6cc;
-  padding: 30px 15px;
-  border-radius: 15px;
-  margin-bottom: 30px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  animation: slideDown 1s ease;
-}
-
-header h1 {
-  font-size: 2.5rem;
-  color: #b35c4b;
-}
-
-header p {
-  font-size: 1.2rem;
-  color: #73453f;
+  padding: 20px;
 }
 
 nav a {
-  margin: 0 15px;
+  margin: 0 10px;
   text-decoration: none;
-  color: #b35c4b;
+  color: #b85c38;
   font-weight: bold;
-  transition: color 0.3s ease;
 }
 
-nav a:hover {
-  color: #ff8566;
+main {
+  padding: 20px;
 }
 
-/* Hero Image Section */
-.hero-image {
-  text-align: center;
-  margin: 30px auto;
-  animation: fadeIn 2s ease-in-out;
-}
-
-.hero-image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 20px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-}
-
-/* Section Cards */
 .card {
-  background-color: #fff0e6;
-  padding: 25px;
-  border-radius: 15px;
-  margin: 20px 0;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-  animation: fadeInUp 1s ease;
-}
-
-/* Skills Grid */
-.skills {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  background-color: #fff;
+  padding: 15px 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .skills li {
-  background-color: #ffc2b3;
-  padding: 10px 15px;
-  border-radius: 8px;
-  font-weight: bold;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 20px;
-  font-size: 0.9rem;
-  color: #aaa;
-}
-
-/* Contact Buttons */
-.contact-buttons {
-  margin-top: 15px;
-}
-
-.contact-buttons a {
   display: inline-block;
-  margin: 8px;
-  padding: 10px 20px;
-  background-color: #ff8566;
-  color: white;
-  border-radius: 8px;
-  text-decoration: none;
+  background-color: #fcd5ce;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 5px;
   font-weight: bold;
-  transition: background-color 0.3s ease;
 }
 
-.contact-buttons a:hover {
-  background-color: #ff5e3a;
-}
+button {
+  background-color: #ffb703;
+  color: #000;
+  border: none
 
-/* Animations */
-@keyframes fadeIn {
-  from { opacity: 0 }
-  to { opacity: 1 }
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(25px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes slideDown {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
